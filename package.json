@@ -1,0 +1,43 @@
+{
+  "name": "all-star-thanks",
+  "version": "1.0.0",
+  "author": "Keisuke Kan <9renpoto@gmail.com>",
+  "devDependencies": {
+    "@9renpoto/eslint-config-flowtype": "^0.6.0",
+    "@9renpoto/tslint-config": "^3.4.0",
+    "@storybook/react": "^3.2.16",
+    "@types/faker": "^4.1.2",
+    "@types/storybook__react": "^3.0.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.11.0",
+    "faker": "^4.1.0",
+    "flow-bin": "^0.59.0",
+    "flow-typed": "^2.2.3",
+    "gh-pages": "^1.1.0",
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
+    "style-loader": "^0.19.0",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.1",
+    "url-loader": "^0.6.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
+  "scripts": {
+    "clean": "rimraf coverage .stoybook/build lib",
+    "lint": "tslint {src,stories,__tests__}/**/*.ts{,x}",
+    "precommit": "lint-staged",
+    "start": "start-storybook -p 9001",
+    "storybook": "build-storybook -o ./.storybook/build"
+  },
+  "style": "lib/bundle.css",
+  "types": "lib/index.d.ts"
+}
