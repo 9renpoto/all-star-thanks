@@ -15,6 +15,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "cpx": "^1.5.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.11.0",
     "faker": "^4.1.0",
@@ -23,6 +24,7 @@
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^5.0.0",
+    "npm-run-all": "^4.1.2",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "prettier-eslint-cli": "^4.4.0",
@@ -47,11 +49,15 @@
   "main": "index.js",
   "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
   "scripts": {
+    "build": "run-s clean build:*",
+    "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
+    "build:js": "babel src -d lib",
     "clean": "rimraf coverage .stoybook/build lib",
+    "deploy": "run-s clean storybook",
     "lint": "tslint {src,stories,__tests__}/**/*.ts{,x}",
     "precommit": "lint-staged",
     "start": "start-storybook -p 9001",
-    "storybook": "build-storybook -o ./.storybook/build"
+    "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build"
   },
   "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
