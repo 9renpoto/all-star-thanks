@@ -1,9 +1,9 @@
 /* @flow */
-import {storiesOf} from '@storybook/react'
-import {date, random} from 'faker'
-import * as React from 'react'
+import { storiesOf } from '@storybook/react'
+import { date, random } from 'faker'
+import React from 'react'
 
-import '../html/css/style.css'
+import '../src/css/style.css'
 import App from '../src'
 
 storiesOf('Content', module).add('App', () => (

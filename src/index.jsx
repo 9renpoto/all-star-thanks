@@ -2,12 +2,12 @@
 import React from 'react'
 
 export type Row = {
-  name: string
-  point: number
+  name: string,
+  point: number,
   time: string
 }
 
-export default function (props: {data: Array<Row>}) {
+export default function (props: { data: Array<Row> }) {
   return (
     <ul>
       {props.data.map((d: Row, i: number) => (
