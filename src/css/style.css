@@ -8,11 +8,9 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 li {
-  animation:
-    slideDown 0.4s ease 0s,
-    zoom 0.4s ease 0s,
-    height 0.4s ease 0s,
+  animation: slideDown 0.4s ease 0s, zoom 0.4s ease 0s, height 0.4s ease 0s,
     fadeIn 0.4s forwards 0s;
   transform-origin: 50% 50%;
   display: flex;
@@ -20,15 +18,19 @@ li {
   font-size: 19px;
   padding: 0 10px 0 0;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fff;
   width: 100%;
-  background: -webkit-linear-gradient(top, rgba(16,87,239,1) 0%,rgba(0,172,255,1) 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(16, 87, 239, 1) 0%,
+    rgba(0, 172, 255, 1) 100%
+  );
   border-radius: 20px 50px 50px 20px;
-  box-shadow: inset 2px 1px 0px 0px rgba(255,255,255,0.5);
+  box-shadow: inset 2px 1px 0 0 rgba(255, 255, 255, 0.5);
   position: relative;
   opacity: 0;
   overflow: hidden;
-  font-family: 'ＭＳ Ｐゴシック','MS PGothic';
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
 li + li {
@@ -43,9 +45,13 @@ li .num {
   color: #fff;
   font-weight: bold;
   font-size: 18px;
-  text-shadow: 0px 0px 2px rgba(30,12,113,0.8);
+  text-shadow: 0 0 2px rgba(30, 12, 113, 0.8);
   padding: 0 3px;
-  background: -webkit-linear-gradient(top, rgba(23,0,159,1) 0%,rgba(0,108,255,1) 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(23, 0, 159, 1) 0%,
+    rgba(0, 108, 255, 1) 100%
+  );
 }
 
 li .name {
@@ -54,7 +60,7 @@ li .name {
   box-sizing: border-box;
   color: #e4f6f8;
   font-weight: bold;
-  text-shadow: 0px 0px 2px rgba(30,12,113,0.8);
+  text-shadow: 0 0 2px rgba(30, 12, 113, 0.8);
 }
 
 li .point {
@@ -64,7 +70,7 @@ li .point {
   font-weight: bold;
   background-color: #f9e600;
   border-radius: 3px 0 0 3px;
-  box-shadow: inset 1px 1px 2px 1px rgba(0,0,0,0.7);
+  box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 li .point small {
@@ -76,30 +82,48 @@ li .time {
   margin-left: 5px;
   color: #fff;
   font-weight: bold;
-  text-shadow: 1px 1px 0px #0f002b,
-  -1px 1px 0px #0f002b,
-  1px -1px 0px #0f002b,
-  -1px -1px 0px #0f002b;
+  text-shadow: 1px 1px 0 #0f002b, -1px 1px 0 #0f002b, 1px -1px 0 #0f002b,
+    -1px -1px 0 #0f002b;
 }
 
 @keyframes fadeIn {
-  100% { opacity: 1; }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideDown {
-  0% { top: 0;}
-  50% { top: -2em; }
-  100% { top: 0;}
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -2em;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes zoom {
-  0% { transform: scaleX(0.8);}
-  100% { transform: scaleX(1);}
+  0% {
+    transform: scaleX(0.8);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes height {
-  0% { max-height: 0;}
-  100% { max-height: 100%;}
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 100%;
+  }
 }
 
 li:nth-child(1) {
