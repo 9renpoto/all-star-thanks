@@ -1,6 +1,6 @@
 {
   "name": "all-star-thanks",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Keisuke Kan <9renpoto@gmail.com>",
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "^0.6.0",
@@ -46,7 +46,7 @@
       "git add"
     ]
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
   "scripts": {
     "build": "run-s clean build:*",
