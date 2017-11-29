@@ -21,7 +21,7 @@ li {
   transform-origin: 50% 50%;
   display: flex;
   align-items: center;
-  font-size: 19px;
+  font-size: 42px;
   padding: 0 10px 0 0;
   box-sizing: border-box;
   color: #fff;
@@ -44,13 +44,13 @@ li + li {
 }
 
 li .num {
-  min-width: 1.7rem;
+  min-width: 2.1rem;
   text-align: center;
   height: 100%;
   margin-top: 2px;
   color: #fff;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 42px;
   text-shadow: 0 0 2px rgba(30, 12, 113, 0.8);
   padding: 0 3px;
   background: -webkit-linear-gradient(
@@ -71,7 +71,7 @@ li .name {
 
 li .point {
   padding: 0 5px 0 10px;
-  width: 8.5%;
+  width: 10%;
   text-align: right;
   box-sizing: border-box;
   color: #1e0c71;
@@ -83,12 +83,12 @@ li .point {
 
 li .point small {
   font-weight: normal;
-  font-size: 10px;
+  font-size: 42px;
 }
 
 li .time {
   margin-left: 5px;
-  width: 42%;
+  width: 30%;
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 0 #0f002b, -1px 1px 0 #0f002b, 1px -1px 0 #0f002b,
