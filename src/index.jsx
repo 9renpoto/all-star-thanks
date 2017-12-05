@@ -4,7 +4,8 @@ import React from 'react'
 export type Row = {
   name: string,
   point: number,
-  time: string
+  time: string,
+  rank?: number
 }
 
 export default function (props: { data: Array<Row> }) {
@@ -12,7 +13,7 @@ export default function (props: { data: Array<Row> }) {
     <ul>
       {props.data.map((d: Row, i: number) => (
         <li>
-          <span className='num'>{10 - i}</span>
+          <span className='num'>{d.rank ? d.rank : 10 - i}</span>
           <span className='name'>{d.name}</span>
           <span className='point'>
             {d.point}
