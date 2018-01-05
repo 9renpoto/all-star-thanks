@@ -16,7 +16,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "cpx": "^1.5.0",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.8",
     "eslint": "^4.14.0",
     "faker": "^4.1.0",
     "flow-bin": "^0.62.0",
