@@ -6,7 +6,7 @@
     "@9renpoto/eslint-config-flowtype": "^0.6.0",
     "@9renpoto/eslint-config-react": "^0.2.0",
     "@9renpoto/tslint-config": "^3.4.0",
-    "@storybook/react": "^3.3.10",
+    "@storybook/react": "^3.3.11",
     "@types/faker": "^4.1.2",
     "@types/storybook__react": "^3.0.6",
     "babel-cli": "^6.26.0",
