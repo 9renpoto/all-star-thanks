@@ -28,7 +28,7 @@
     "preact": "^8.2.7",
     "preact-compat": "^3.18.0",
     "prettier-eslint-cli": "^4.7.1",
-    "style-loader": "^0.20.1",
+    "style-loader": "^0.20.2",
     "tslint": "^5.9.1",
     "tslint-react": "^3.5.1",
     "typescript": "^2.7.1",
