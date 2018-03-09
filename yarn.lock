@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-flowtype@^4.3.0":
+"@9renpoto/eslint-config-flowtype@4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-4.3.0.tgz#8a484d427d0b24821b41815fcb4e6bd2132b0e1f"
   dependencies:
@@ -10,7 +10,7 @@
     babel-eslint "^8.2.2"
     eslint-plugin-flowtype "^2.45.0"
 
-"@9renpoto/eslint-config-react@^4.3.0":
+"@9renpoto/eslint-config-react@4.3.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-react/-/eslint-config-react-4.3.0.tgz#78b35c7654d5d1309613079fe2416c71000c497b"
   dependencies:
@@ -27,7 +27,7 @@
     eslint-plugin-promise "^3.6.0"
     eslint-plugin-standard "^3.0.1"
 
-"@9renpoto/tslint-config@^4.0.0":
+"@9renpoto/tslint-config@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/tslint-config/-/tslint-config-4.0.0.tgz#05ea287b1ade8c53f6b9913bd447a541232ad4b0"
   dependencies:
@@ -194,7 +194,7 @@
   dependencies:
     babel-runtime "^6.5.0"
 
-"@storybook/react@^3.3.14":
+"@storybook/react@3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-3.3.14.tgz#89a11e786846b7bcbca8a2baf8972733b3609ab2"
   dependencies:
@@ -284,7 +284,7 @@
     react-treebeard "^2.1.0"
     redux "^3.7.2"
 
-"@types/faker@^4.1.2":
+"@types/faker@4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@types/faker/-/faker-4.1.2.tgz#f8ab50c9f9af68c160dd71b63f83e24b712d0df5"
 
@@ -296,7 +296,7 @@
   version "16.0.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.25.tgz#bf696b83fe480c5e0eff4335ee39ebc95884a1ed"
 
-"@types/storybook__react@^3.0.7":
+"@types/storybook__react@3.0.7":
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/@types/storybook__react/-/storybook__react-3.0.7.tgz#2ca6ab78e5fe777737aa5880b0bb5228f564e137"
   dependencies:
@@ -648,7 +648,7 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-babel-cli@^6.26.0:
+babel-cli@6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-cli/-/babel-cli-6.26.0.tgz#502ab54874d7db88ad00b887a06383ce03d002f1"
   dependencies:
@@ -677,7 +677,7 @@ babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-core@^6.26.0:
+babel-core@6.26.0, babel-core@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.0.tgz#af32f78b31a6fcef119c87b0fd8d9753f03a0bb8"
   dependencies:
@@ -879,7 +879,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-loader@^7.1.2, babel-loader@^7.1.4:
+babel-loader@7.1.4, babel-loader@^7.1.2:
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.4.tgz#e3463938bd4e6d55d1c174c5485d406a188ed015"
   dependencies:
@@ -1434,7 +1434,7 @@ babel-preset-env@1.6.1, babel-preset-env@^1.6.1:
     invariant "^2.2.2"
     semver "^5.3.0"
 
-babel-preset-flow@^6.23.0:
+babel-preset-flow@6.23.0, babel-preset-flow@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-preset-flow/-/babel-preset-flow-6.23.0.tgz#e71218887085ae9a24b5be4169affb599816c49d"
   dependencies:
@@ -2304,7 +2304,7 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-cpx@^1.5.0:
+cpx@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/cpx/-/cpx-1.5.0.tgz#185be018511d87270dedccc293171e37655ab88f"
   dependencies:
@@ -2401,7 +2401,7 @@ css-in-js-utils@^2.0.0:
   dependencies:
     hyphenate-style-name "^1.0.2"
 
-css-loader@^0.28.10, css-loader@^0.28.8:
+css-loader@0.28.10, css-loader@^0.28.8:
   version "0.28.10"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.10.tgz#40282e79230f7bcb4e483efa631d670b735ebf42"
   dependencies:
@@ -3037,7 +3037,7 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.0.0, eslint@^4.18.2, eslint@^4.5.0:
+eslint@4.18.2, eslint@^4.0.0, eslint@^4.5.0:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.2.tgz#0f81267ad1012e7d2051e186a9004cc2267b8d45"
   dependencies:
@@ -3307,7 +3307,7 @@ extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
 
-faker@^4.1.0:
+faker@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
 
@@ -3447,11 +3447,11 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flow-bin@^0.66.0:
+flow-bin@0.66.0:
   version "0.66.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.66.0.tgz#a96dde7015dc3343fd552a7b4963c02be705ca26"
 
-flow-typed@^2.3.0:
+flow-typed@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-2.3.0.tgz#0f8604faab60691b885024e16ec0e3256e3b680e"
   dependencies:
@@ -3662,7 +3662,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gh-pages@^1.1.0:
+gh-pages@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-1.1.0.tgz#738134d8e35e5323b39892cda28b8904e85f24b2"
   dependencies:
@@ -4062,7 +4062,7 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
-husky@^0.14.3:
+husky@0.14.3:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.3.tgz#c69ed74e2d2779769a17ba8399b54ce0b63c12c3"
   dependencies:
@@ -4820,7 +4820,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@^7.0.0:
+lint-staged@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-7.0.0.tgz#57926c63201e7bd38ca0576d74391efa699b4a9d"
   dependencies:
@@ -5508,7 +5508,7 @@ npm-path@^2.0.2:
   dependencies:
     which "^1.2.10"
 
-npm-run-all@^4.1.2:
+npm-run-all@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-4.1.2.tgz#90d62d078792d20669139e718621186656cea056"
   dependencies:
@@ -6212,7 +6212,7 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.14:
     source-map "^0.6.1"
     supports-color "^4.4.0"
 
-preact-compat@^3.18.0:
+preact-compat@3.18.0:
   version "3.18.0"
   resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.18.0.tgz#ca430cc1f67193fb9feaf7c510832957b2ebe701"
   dependencies:
@@ -6232,7 +6232,7 @@ preact-transition-group@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/preact-transition-group/-/preact-transition-group-1.1.1.tgz#f0a49327ea515ece34ea2be864c4a7d29e5d6e10"
 
-preact@^8.2.7:
+preact@8.2.7:
   version "8.2.7"
   resolved "https://registry.yarnpkg.com/preact/-/preact-8.2.7.tgz#316249fb678cd5e93e7cee63cea7bfb62dbd6814"
 
@@ -6248,7 +6248,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier-eslint-cli@^4.7.1:
+prettier-eslint-cli@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.7.1.tgz#3d103c494baa4e80b99ad53e2b9db7620101859f"
   dependencies:
@@ -7457,19 +7457,19 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
+style-loader@0.20.2:
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.20.2.tgz#851b373c187890331776e9cde359eea9c95ecd00"
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^0.4.3"
+
 style-loader@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.19.1.tgz#591ffc80bcefe268b77c5d9ebc0505d772619f85"
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
-
-style-loader@^0.20.2:
-  version "0.20.2"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.20.2.tgz#851b373c187890331776e9cde359eea9c95ecd00"
-  dependencies:
-    loader-utils "^1.1.0"
-    schema-utils "^0.4.3"
 
 subarg@^1.0.0:
   version "1.0.0"
@@ -7677,13 +7677,13 @@ tslint-eslint-rules@^4.1.1:
     tslib "^1.0.0"
     tsutils "^1.4.0"
 
-tslint-react@^3.5.1:
+tslint-react@3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.5.1.tgz#a5ca48034bf583fb63b42763bb89fa23062d5390"
   dependencies:
     tsutils "^2.13.1"
 
-tslint@^5.9.1:
+tslint@5.9.1:
   version "5.9.1"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.9.1.tgz#1255f87a3ff57eb0b0e1f0e610a8b4748046c9ae"
   dependencies:
@@ -7748,7 +7748,7 @@ typescript-eslint-parser@^11.0.0:
     lodash.unescape "4.0.1"
     semver "5.4.1"
 
-typescript@^2.5.1, typescript@^2.7.2:
+typescript@2.7.2, typescript@^2.5.1:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
 
@@ -7887,6 +7887,14 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
 
+url-loader@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-1.0.1.tgz#61bc53f1f184d7343da2728a1289ef8722ea45ee"
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.0.3"
+    schema-utils "^0.4.3"
+
 url-loader@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-0.6.2.tgz#a007a7109620e9d988d14bce677a1decb9a993f7"
@@ -7894,14 +7902,6 @@ url-loader@^0.6.2:
     loader-utils "^1.0.2"
     mime "^1.4.1"
     schema-utils "^0.3.0"
-
-url-loader@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-1.0.1.tgz#61bc53f1f184d7343da2728a1289ef8722ea45ee"
-  dependencies:
-    loader-utils "^1.1.0"
-    mime "^2.0.3"
-    schema-utils "^0.4.3"
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
