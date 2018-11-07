@@ -8,7 +8,7 @@
     "@9renpoto/tslint-config": "4.6.0",
     "@storybook/react": "4.0.4",
     "@types/faker": "4.1.4",
-    "@types/storybook__react": "3.0.9",
+    "@types/storybook__react": "4.0.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.4",
