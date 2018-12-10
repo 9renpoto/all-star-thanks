@@ -19,7 +19,7 @@
     "css-loader": "2.0.0",
     "eslint": "5.10.0",
     "faker": "4.1.0",
-    "flow-bin": "0.87.0",
+    "flow-bin": "0.88.0",
     "flow-typed": "2.5.1",
     "gh-pages": "2.0.1",
     "husky": "1.2.0",
