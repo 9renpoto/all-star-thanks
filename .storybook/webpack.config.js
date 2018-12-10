@@ -1,9 +1,5 @@
 module.exports = {
   resolve: {
-    alias: {
-      react: 'preact-compat',
-      'react-dom': 'preact-compat'
-    },
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     enforceExtension: false
   },

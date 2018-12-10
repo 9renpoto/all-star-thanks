@@ -6,15 +6,14 @@
     "@9renpoto/eslint-config-flowtype": "4.7.0",
     "@9renpoto/eslint-config-react": "4.7.0",
     "@9renpoto/tslint-config": "4.7.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/react": "4.0.12",
     "@types/faker": "4.1.4",
     "@types/storybook__react": "4.0.0",
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
     "babel-loader": "8.0.4",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-flow": "6.23.0",
-    "babel-preset-react": "6.24.1",
     "cpx": "1.5.0",
     "css-loader": "2.0.0",
     "eslint": "5.10.0",
@@ -25,14 +24,17 @@
     "husky": "1.2.0",
     "lint-staged": "8.1.0",
     "npm-run-all": "4.1.5",
-    "preact": "8.4.2",
-    "preact-compat": "3.18.4",
     "prettier-eslint-cli": "4.7.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-test-renderer": "^16.6.3",
     "style-loader": "0.23.1",
-    "tslint": "5.11.0",
-    "tslint-react": "3.6.0",
-    "typescript": "3.2.2",
     "url-loader": "1.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "license": "MIT",
   "lint-staged": {
@@ -41,8 +43,8 @@
       "eslint --cache",
       "git add"
     ],
-    "*.css": [
-      "prettier --parser postcss --write",
+    "*.{css,md}": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -55,7 +57,6 @@
     "clean": "rimraf coverage .stoybook/build lib",
     "deploy": "run-s clean storybook",
     "lint": "tslint {src,stories,__tests__}/**/*.ts{,x}",
-    "precommit": "lint-staged",
     "start": "start-storybook -p 9001",
     "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build"
   },
