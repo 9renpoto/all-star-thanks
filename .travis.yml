@@ -4,7 +4,11 @@ node_js: stable
 env:
   matrix:
   - CMD=lint
+  - CMD=test
+  - CMD=build
 script:
 - yarn $CMD
+after_success:
+- '[ "$CMD" == "test" ] && yarn coverage'
 notifications:
   email: false

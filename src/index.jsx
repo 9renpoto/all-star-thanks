@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react'
+import { num, name, point, time } from './css/style.css'
 
 export type Row = {
   name: string,
@@ -11,15 +12,15 @@ export type Row = {
 export default function (props: { data: Array<Row> }) {
   return (
     <ul>
-      {props.data.map((d: Row, i: number) => (
-        <li>
-          <span className='num'>{d.rank ? d.rank : 10 - i}</span>
-          <span className='name'>{d.name}</span>
-          <span className='point'>
+      {props.data.map((d, i) => (
+        <li key={`thanks-${i}`}>
+          <span className={num}>{d.rank ? d.rank : 10 - i}</span>
+          <span className={name}>{d.name}</span>
+          <span className={point}>
             {d.point}
             <small>P</small>
           </span>
-          <span className='time'>{d.time}</span>
+          <span className={time}>{d.time}</span>
         </li>
       ))}
     </ul>

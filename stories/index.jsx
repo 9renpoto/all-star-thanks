@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react'
 import { date, random } from 'faker'
 import React from 'react'
 
-import '../src/css/style.css'
 import App from '../src'
 
 storiesOf('Content', module).add('App', () => (

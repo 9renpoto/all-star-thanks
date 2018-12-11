@@ -1,27 +1,39 @@
 {
   "name": "all-star-thanks",
+  "description": "like `all-star-thanks` animation components",
   "version": "0.0.1",
   "author": "Keisuke Kan <9renpoto@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/9renpoto/all-star-thanks/issues"
+  },
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "4.7.0",
     "@9renpoto/eslint-config-react": "4.7.0",
-    "@9renpoto/tslint-config": "4.7.0",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-storyshots": "^4.0.12",
     "@storybook/react": "4.0.12",
     "@types/faker": "4.1.4",
     "@types/storybook__react": "4.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "8.0.4",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "codecov": "^3.1.0",
     "cpx": "1.5.0",
     "css-loader": "2.0.0",
+    "css-modules-flow-types-cli": "^1.1.1",
+    "empty": "^0.10.1",
     "eslint": "5.10.0",
     "faker": "4.1.0",
     "flow-bin": "0.88.0",
     "flow-typed": "2.5.1",
     "gh-pages": "2.0.1",
     "husky": "1.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
     "lint-staged": "8.1.0",
     "npm-run-all": "4.1.5",
     "prettier-eslint-cli": "4.7.1",
@@ -31,11 +43,42 @@
     "style-loader": "0.23.1",
     "url-loader": "1.1.2"
   },
+  "homepage": "https://9renpoto.github.io/all-star-thanks",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "coveragePathIgnorePatterns": [
+      "/stories/",
+      "/.storybook/",
+      "<rootDir>/node_modules/",
+      "story(.*).tsx",
+      "<rootDir>/setup.js"
+    ],
+    "setupFiles": [
+      "<rootDir>/setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "collectCoverage": true
+  },
+  "keywords": [
+    "react",
+    "styleguide"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.{js,jsx}": [
@@ -54,11 +97,16 @@
     "build": "run-s clean build:*",
     "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
     "build:js": "babel src -d lib",
+    "coverage": "codecov -f ./coverage/lcov.info",
     "clean": "rimraf coverage .stoybook/build lib",
     "deploy": "run-s clean storybook",
-    "lint": "tslint {src,stories,__tests__}/**/*.ts{,x}",
+    "lint": "run-p lint:*",
+    "lint:es": "eslint . --ext=js,jsx",
+    "lint:flow": "css-modules-flow-types src && flow",
+    "postinstall": "flow-typed install -s",
     "start": "start-storybook -p 9001",
-    "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build"
+    "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build",
+    "test": "jest"
   },
   "style": "lib/bundle.css",
   "types": "lib/index.d.ts"
