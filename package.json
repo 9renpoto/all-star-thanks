@@ -102,7 +102,7 @@
     "lint": "run-p lint:*",
     "lint:es": "eslint . --ext=js,jsx",
     "lint:flow": "css-modules-flow-types src && flow",
-    "postinstall": "flow-typed install -s",
+    "postinstall": "flow-typed install",
     "start": "start-storybook -p 9001",
     "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build",
     "test": "jest"
