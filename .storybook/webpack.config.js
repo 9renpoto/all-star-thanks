@@ -1,18 +1,15 @@
+/* @flow */
+
 module.exports = {
   resolve: {
-    alias: {
-      react: 'preact-compat',
-      'react-dom': 'preact-compat'
-    },
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.css', '.jpeg'],
     enforceExtension: false
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,

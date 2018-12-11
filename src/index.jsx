@@ -11,8 +11,8 @@ export type Row = {
 export default function (props: { data: Array<Row> }) {
   return (
     <ul>
-      {props.data.map((d: Row, i: number) => (
-        <li>
+      {props.data.map((d, i) => (
+        <li key={`thanks-${i}`}>
           <span className='num'>{d.rank ? d.rank : 10 - i}</span>
           <span className='name'>{d.name}</span>
           <span className='point'>
