@@ -22,7 +22,7 @@
     "babel-plugin-require-context-hook": "1.0.0",
     "codecov": "3.3.0",
     "cpx": "1.5.0",
-    "css-loader": "2.1.0",
+    "css-loader": "2.1.1",
     "css-modules-flow-types-cli": "1.1.1",
     "eslint": "5.16.0",
     "faker": "4.1.0",
