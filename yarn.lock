@@ -4640,22 +4640,22 @@ css-loader@^2.1.0:
     postcss-value-parser "^3.3.0"
     schema-utils "^1.0.0"
 
-css-modules-flow-types-cli@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/css-modules-flow-types-cli/-/css-modules-flow-types-cli-1.1.1.tgz#15f8c25e9c2e1e4abc6567126d43a12c8483411a"
-  integrity sha512-6TmTMDOyQ5XqGIhUNvjwnewgnW7pvT6iG9WCk/rXQBTVKj4BBf3RLN6+/uocv4oh1IyTzpQ18bk/B3PAht2oDw==
+css-modules-flow-types-cli@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/css-modules-flow-types-cli/-/css-modules-flow-types-cli-1.2.0.tgz#14e9a0180963550640c6b9f441c43e5d97cc571d"
+  integrity sha512-agPHuLKz3LRPR/WCNTykQKIHB5KGqIO2HR/Npi28FpAHkFI6zIhGujE+D5R64C90RmeJ3Ik620/bB9r9V2xO2Q==
   dependencies:
     chalk "^1.1.3"
-    css-modules-flow-types-printer "^1.1.1"
+    css-modules-flow-types-printer "^1.2.0"
     css-modules-loader-core "^1.0.0"
     gaze "^1.1.1"
     globby "^6.1.0"
     meow "^3.7.0"
 
-css-modules-flow-types-printer@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/css-modules-flow-types-printer/-/css-modules-flow-types-printer-1.1.1.tgz#c2ddd13ce882407d3c3a21888cf3755fad10af1a"
-  integrity sha512-K8sFwmHwRtmBC8lMKV3gqQgtxq3fBA/gI/tXzZEouI9XxQH9rd7x6ayXT0tmbJ+6owbwn4aLFAHHCjp7fDGZeQ==
+css-modules-flow-types-printer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/css-modules-flow-types-printer/-/css-modules-flow-types-printer-1.2.0.tgz#f525c92ada1e35f604038ca4a67983e0b12db795"
+  integrity sha512-K6zQoF4lNRgH+pMB+C4gzXsDQTt91/dnHwpd2uYkPCgMye4vKPZ4qm2VgbY/1FwHpeRN5rJvh7L63w5ztZIGbA==
 
 css-modules-loader-core@^1.0.0:
   version "1.1.0"
