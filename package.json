@@ -9,9 +9,9 @@
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "4.7.0",
     "@9renpoto/eslint-config-react": "4.7.0",
-    "@babel/cli": "7.4.3",
-    "@babel/core": "7.4.3",
-    "@babel/preset-env": "7.4.3",
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
     "@babel/preset-flow": "7.0.0",
     "@babel/preset-react": "7.0.0",
     "@storybook/addon-storyshots": "5.0.10",
