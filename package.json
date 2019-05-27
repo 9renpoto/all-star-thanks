@@ -105,8 +105,14 @@
     "lint:flow": "css-modules-flow-types src && flow",
     "start": "start-storybook -p 9001",
     "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "style": "lib/bundle.css",
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.166.1"
+  }
 }
