@@ -97,22 +97,16 @@
     "build": "run-s clean build:*",
     "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
     "build:js": "babel src -d lib",
-    "coverage": "codecov -f ./coverage/lcov.info",
     "clean": "rimraf coverage .stoybook/build lib",
+    "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "run-s clean storybook",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --ext=js,jsx",
     "lint:flow": "css-modules-flow-types src && flow",
     "start": "start-storybook -p 9001",
     "storybook": "build-storybook -o ./.storybook/build && gh-pages -d ./.storybook/build",
-    "test": "jest",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test": "jest"
   },
   "style": "lib/bundle.css",
-  "types": "lib/index.d.ts",
-  "snyk": true,
-  "dependencies": {
-    "snyk": "^1.166.1"
-  }
+  "types": "lib/index.d.ts"
 }
