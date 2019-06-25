@@ -40,7 +40,7 @@
     "react-dom": "16.8.6",
     "react-test-renderer": "16.8.6",
     "style-loader": "0.23.1",
-    "url-loader": "2.0.0"
+    "url-loader": "2.0.1"
   },
   "homepage": "https://9renpoto.github.io/all-star-thanks",
   "husky": {
