@@ -7,6 +7,7 @@
 [lints]
 
 [options]
+server.max_workers=4
 
 ; Extensions
 module.file_ext=.js
