@@ -1,24 +1,23 @@
-/* @flow */
+const path = require("path");
 
-module.exports = {
-  resolve: {
-    extensions: ['.js', '.jsx', '.css', '.jpeg'],
-    enforceExtension: false
-  },
-  module: {
-    rules: [
+module.exports = async ({ config }) => {
+  config.module.rules.concat(
+    ...[
       {
         test: /\.jsx?$/,
-        use: 'babel-loader'
+        use: "babel-loader"
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.jpeg$/,
-        loaders: 'url-loader'
+        loaders: "url-loader"
       }
     ]
-  }
-}
+  );
+
+  // Return the altered config
+  return config;
+};
