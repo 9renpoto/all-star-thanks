@@ -100,7 +100,7 @@
     "clean": "rimraf coverage .stoybook/build lib",
     "coverage": "codecov -f ./coverage/lcov.info",
     "deploy": "run-s clean storybook",
-    "lint": "run-p lint:*",
+    "lint": "run-p -l lint:*",
     "lint:es": "eslint . --ext=js,jsx",
     "lint:flow": "css-modules-flow-types src && flow",
     "start": "start-storybook -p 9001",
