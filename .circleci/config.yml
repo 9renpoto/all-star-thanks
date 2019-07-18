@@ -1,0 +1,31 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts
+        environment:
+          TZ: Asia/Tokyo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test -w 1
+      - run: npx build-storybook -o .storybook/build
+      - store_artifacts:
+          path: .storybook/build
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
