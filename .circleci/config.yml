@@ -19,7 +19,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn lint
       - run: yarn build
-      - run: yarn test -w 1
+      - run: yarn test -w 1 && yarn coverage
       - run: npx build-storybook -o .storybook/build
       - store_artifacts:
           path: .storybook/build
