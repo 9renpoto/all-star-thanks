@@ -7,7 +7,7 @@
     "url": "https://github.com/9renpoto/all-star-thanks/issues"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-flowtype": "5.0.1",
+    "@9renpoto/eslint-config-flowtype": "5.1.0",
     "@9renpoto/eslint-config-react": "5.1.0",
     "@babel/cli": "7.6.0",
     "@babel/core": "7.6.0",
@@ -25,6 +25,7 @@
     "eslint": "6.4.0",
     "faker": "4.1.0",
     "flow-bin": "0.108.0",
+    "gh-pages": "2.1.1",
     "husky": "3.0.5",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
