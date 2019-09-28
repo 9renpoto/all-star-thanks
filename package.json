@@ -34,9 +34,9 @@
     "mockdate": "2.0.5",
     "npm-run-all": "4.1.5",
     "prettier-eslint-cli": "5.0.0",
-    "react": "16.10.0",
-    "react-dom": "16.10.0",
-    "react-test-renderer": "16.10.0"
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-test-renderer": "16.10.1"
   },
   "homepage": "https://9renpoto.github.io/all-star-thanks",
   "husky": {
