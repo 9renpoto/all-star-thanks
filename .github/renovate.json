@@ -1,0 +1,6 @@
+{
+  "extends": ["config:js-lib"],
+  "automerge": true,
+  "labels": ["Type: Dependencies"],
+  "semanticCommits": true
+}
