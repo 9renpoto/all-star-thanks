@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-flowtype@5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-5.5.1.tgz#5e613c2b61f4aa0ec7b325fae095e613a9f309af"
-  integrity sha512-oVj5+tILu2aw8qQjd5ttdkWQEZLfnCqj+QFPYfyOIGIuJKEnavxIGxanhnt4BQjYmXmEG1GITYxvA1uXo1qj8w==
+"@9renpoto/eslint-config-flowtype@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-6.0.0.tgz#708a7d56ec02fe9676a7a61a0a917931f50052fe"
+  integrity sha512-bw4mdHAQoA/9djLUrY5xIdCLV0CY+MTZIJhUEVwtWJkRQzzXq7KUYOJLi1/tSqFF3JvPiq4p7S/Kp2GO/rKSZg==
   dependencies:
-    "@9renpoto/eslint-config" "^5.5.1"
+    "@9renpoto/eslint-config" "^6.0.0"
     babel-eslint "^10.0.3"
-    eslint-plugin-flowtype "^4.5.3"
+    eslint-plugin-flowtype "^5.1.3"
 
 "@9renpoto/eslint-config-react@5.5.1":
   version "5.5.1"
@@ -19,13 +19,13 @@
     eslint-config-prettier "^6.9.0"
     eslint-plugin-react-hooks "^2.2.0"
 
-"@9renpoto/eslint-config@^5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-5.5.1.tgz#3fd11999a8a690bc4ab3af1388d6185d381f195a"
-  integrity sha512-ia5kGsY4Odh/vm8KZvtxQcavSvN7VWD72cQ94dBjeOzWoX1lSqP85mLu7RfNHb2Cr/eIHjKleQFZ1+94JVquNw==
+"@9renpoto/eslint-config@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-6.0.0.tgz#09fdcd9ec7d3eff517586f281127f821d4186365"
+  integrity sha512-9/COkZt2e+EWl92Xu7NSLuoD7qKuiTfdQpgWmQtosAYp7DVct/cR6cjaURGyuuPoKcuwipDHDbH1fjQP7AopbA==
   dependencies:
-    eslint-config-prettier "^6.9.0"
-    eslint-plugin-import "^2.19.1"
+    eslint-config-prettier "^6.10.0"
+    eslint-plugin-import "^2.20.1"
     eslint-plugin-prettier "^3.1.2"
 
 "@babel/cli@7.10.1":
@@ -7252,6 +7252,13 @@ escodegen@^1.11.1:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-prettier@^6.10.0:
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
+  integrity sha512-oB8cpLWSAjOVFEJhhyMZh6NOEOtBVziaqdDQ86+qhDHFbZXoRTM7pNSvFRfW/W/L/LrQ38C99J5CGuRBBzBsdA==
+  dependencies:
+    get-stdin "^6.0.0"
+
 eslint-config-prettier@^6.9.0:
   version "6.9.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.9.0.tgz#430d24822e82f7deb1e22a435bfa3999fae4ad64"
@@ -7275,17 +7282,18 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-flowtype@^4.5.3:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-4.6.0.tgz#82b2bd6f21770e0e5deede0228e456cb35308451"
-  integrity sha512-W5hLjpFfZyZsXfo5anlu7HM970JBDqbEshAJUkeczP6BFCIfJXuiIBQXyberLRtOStT0OGPF8efeTbxlHk4LpQ==
+eslint-plugin-flowtype@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-5.1.3.tgz#0c63694463b0e8b296975649d637dd39fdf9e877"
+  integrity sha512-UU+BbIxBflqJ171yxbd/HcOktCmOdhXbchIVIq/yBvKpLZXvfzNDOyJGcnuQYLaH840hdoIdU/bqxhoW6I0rIQ==
   dependencies:
     lodash "^4.17.15"
+    string-natural-compare "^3.0.1"
 
-eslint-plugin-import@^2.19.1:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.0.tgz#d749a7263fb6c29980def8e960d380a6aa6aecaa"
-  integrity sha512-NK42oA0mUc8Ngn4kONOPsPB1XhbUvNHqF+g307dPV28aknPoiNnKLFd9em4nkswwepdF5ouieqv5Th/63U7YJQ==
+eslint-plugin-import@^2.20.1:
+  version "2.20.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.2.tgz#91fc3807ce08be4837141272c8b99073906e588d"
+  integrity sha512-FObidqpXrR8OnCh4iNsxy+WACztJLXAHBO5hK79T1Hc77PgQZkyDGA5Ag9xAvRpglvLNxhH/zSmZ70/pZ31dHg==
   dependencies:
     array-includes "^3.0.3"
     array.prototype.flat "^1.2.1"
@@ -14711,6 +14719,11 @@ string-length@^3.1.0:
   dependencies:
     astral-regex "^1.0.0"
     strip-ansi "^5.2.0"
+
+string-natural-compare@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-3.0.1.tgz#7a42d58474454963759e8e8b7ae63d71c1e7fdf4"
+  integrity sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw==
 
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
