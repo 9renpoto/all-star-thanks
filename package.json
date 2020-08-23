@@ -19,8 +19,6 @@
     "lint": "run-p -l lint:*",
     "lint:es": "eslint . --ext=js,jsx",
     "lint:flow": "css-modules-flow-types src && flow",
-    "start": "start-storybook",
-    "storybook": "build-storybook && gh-pages -d storybook-static",
     "test": "jest"
   },
   "keywords": [
@@ -35,6 +33,7 @@
     "@babel/preset-env": "7.11.0",
     "@babel/preset-flow": "7.10.4",
     "@babel/preset-react": "7.10.4",
+    "@storybook/addon-essentials": "6.0.16",
     "@storybook/addon-storyshots": "6.0.16",
     "@storybook/react": "6.0.16",
     "babel-jest": "26.3.0",
