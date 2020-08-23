@@ -17,10 +17,10 @@ jobs:
       - name: npm install, build
         run: |
           yarn install --frozen-lockfile
-          yarn workspace @caddijp/components build-storybook
+          yarn build-storybook
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/components/storybook-static
+          publish_dir: ./storybook-static
