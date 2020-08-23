@@ -1,14 +1,3 @@
 module.exports = {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react",
-    "@babel/preset-flow"
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        "require-context-hook"
-      ]
-    }
-  }
-}
+  presets: ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
+};

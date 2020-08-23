@@ -75,13 +75,9 @@
     },
     "coveragePathIgnorePatterns": [
       "/stories/",
-      "/.storybook/",
-      "<rootDir>/node_modules/",
-      "story(.*).tsx",
-      "<rootDir>/setup.js"
+      "/.storybook/"
     ],
     "setupFiles": [
-      "<rootDir>/setup.js",
       "jest-date-mock"
     ],
     "collectCoverage": true
