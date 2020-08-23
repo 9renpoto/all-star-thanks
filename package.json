@@ -1,11 +1,32 @@
 {
   "name": "all-star-thanks",
-  "description": "like `all-star-thanks` animation components",
   "version": "0.0.1",
+  "description": "like `all-star-thanks` animation components",
+  "license": "MIT",
+  "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
   "author": "Keisuke Kan <9renpoto@gmail.com>",
+  "homepage": "https://9renpoto.github.io/all-star-thanks",
   "bugs": {
     "url": "https://github.com/9renpoto/all-star-thanks/issues"
   },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "run-s clean build:*",
+    "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
+    "build:js": "babel src -d lib",
+    "clean": "rimraf coverage storybook-static lib",
+    "deploy": "run-s clean storybook",
+    "lint": "run-p -l lint:*",
+    "lint:es": "eslint . --ext=js,jsx",
+    "lint:flow": "css-modules-flow-types src && flow",
+    "start": "start-storybook",
+    "storybook": "build-storybook && gh-pages -d storybook-static",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "styleguide"
+  ],
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "7.0.3",
     "@9renpoto/eslint-config-react": "7.0.3",
@@ -14,33 +35,31 @@
     "@babel/preset-env": "7.11.0",
     "@babel/preset-flow": "7.10.4",
     "@babel/preset-react": "7.10.4",
-    "@storybook/addon-storyshots": "5.3.19",
-    "@storybook/react": "5.3.19",
-    "babel-jest": "25.5.1",
+    "@storybook/addon-storyshots": "6.0.16",
+    "@storybook/react": "6.0.16",
+    "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
-    "babel-plugin-require-context-hook": "1.0.0",
-    "codecov": "3.7.2",
     "cpx": "1.5.0",
     "css-modules-flow-types-cli": "1.4.1",
     "eslint": "7.7.0",
     "faker": "4.1.0",
     "flow-bin": "0.132.0",
-    "gh-pages": "3.1.0",
     "husky": "4.2.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "25.5.4",
+    "jest": "26.4.2",
     "jest-date-mock": "1.0.8",
     "lint-staged": "10.2.11",
     "mockdate": "3.0.2",
-    "moxci": "0.2.0",
     "npm-run-all": "4.1.5",
-    "prettier-eslint-cli": "5.0.0",
+    "prettier": "2.0.5",
+    "prettier-plugin-organize-imports": "1.1.1",
     "prettier-plugin-package": "1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "typescript": "4.0.2"
   },
-  "homepage": "https://9renpoto.github.io/all-star-thanks",
+  "types": "lib/index.d.ts",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -51,8 +70,7 @@
       "^.+\\.jsx?$": "babel-jest"
     },
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
     },
     "coveragePathIgnorePatterns": [
@@ -62,31 +80,20 @@
       "story(.*).tsx",
       "<rootDir>/setup.js"
     ],
-    "setupFiles": ["<rootDir>/setup.js", "jest-date-mock"],
+    "setupFiles": [
+      "<rootDir>/setup.js",
+      "jest-date-mock"
+    ],
     "collectCoverage": true
   },
-  "keywords": ["react", "styleguide"],
-  "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx}": ["prettier-eslint --write", "eslint --cache", "git add"],
-    "*.{css,md,json}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint ."
+    ],
+    "*.{css,md,json}": [
+      "prettier --write"
+    ]
   },
-  "main": "lib/index.js",
-  "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
-  "scripts": {
-    "build": "run-s clean build:*",
-    "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
-    "build:js": "babel src -d lib",
-    "clean": "rimraf coverage storybook-static lib",
-    "coverage": "codecov -f ./coverage/lcov.info",
-    "deploy": "run-s clean storybook",
-    "lint": "run-p -l lint:*",
-    "lint:es": "eslint . --ext=js,jsx",
-    "lint:flow": "css-modules-flow-types src && flow",
-    "start": "start-storybook",
-    "storybook": "build-storybook && gh-pages -d storybook-static",
-    "test": "jest"
-  },
-  "style": "lib/bundle.css",
-  "types": "lib/index.d.ts"
+  "style": "lib/bundle.css"
 }

@@ -1,3 +1,3 @@
-const faker = require.requireActual('faker')
-faker.seed(123)
-module.exports = faker
+const faker = jest.requireActual("faker");
+faker.seed(123);
+module.exports = faker;
