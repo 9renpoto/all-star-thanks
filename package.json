@@ -9,11 +9,12 @@
   "bugs": {
     "url": "https://github.com/9renpoto/all-star-thanks/issues"
   },
-  "main": "lib/index.js",
+  "main": "lib/all-star-thanks.js",
+  "module": "/lib/all-star-thanks.mordern.js",
   "scripts": {
     "build": "run-s clean build:*",
     "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
-    "build:js": "babel src -d lib",
+    "build:js": "microbundle build -i src/index.jsx -o lib",
     "clean": "rimraf coverage storybook-static lib",
     "deploy": "run-s clean storybook",
     "lint": "run-p -l lint:*",
@@ -28,7 +29,6 @@
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "7.0.3",
     "@9renpoto/eslint-config-react": "7.0.3",
-    "@babel/cli": "7.10.5",
     "@babel/core": "7.11.4",
     "@babel/preset-env": "7.11.0",
     "@babel/preset-flow": "7.10.4",
@@ -48,6 +48,7 @@
     "jest": "26.4.2",
     "jest-date-mock": "1.0.8",
     "lint-staged": "10.2.11",
+    "microbundle": "0.12.3",
     "mockdate": "3.0.2",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
@@ -94,5 +95,7 @@
       "prettier --write"
     ]
   },
-  "style": "lib/bundle.css"
+  "source": "src/index.jsx",
+  "style": "lib/bundle.css",
+  "unpkg": "lib/all-star-thanks.umd.js"
 }
