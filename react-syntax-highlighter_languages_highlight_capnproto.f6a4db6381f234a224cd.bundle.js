@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{1779:function(module,exports,__webpack_require__){module.exports=__webpack_require__(1)("RSGD")}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_capnproto.f6a4db6381f234a224cd.bundle.js.map

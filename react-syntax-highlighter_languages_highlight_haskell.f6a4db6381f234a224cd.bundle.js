@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[72],{1828:function(module,exports,__webpack_require__){module.exports=__webpack_require__(1)("zvol")}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_highlight_haskell.f6a4db6381f234a224cd.bundle.js.map
