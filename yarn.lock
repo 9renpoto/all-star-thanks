@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-flowtype@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.2.0.tgz#57ac460e83fa42d40de0928279f27916060f1859"
-  integrity sha512-twdHHc/KZYLHEAVnaQirBmvfI0hhRUKgJep2Jtdz/2GrEPPOokhUnd9VVzE9nwV1qqfB+sNViUyPW383tllXcg==
+"@9renpoto/eslint-config-flowtype@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.3.0.tgz#3e14ce582aa7c61f8d05b5cebbf7c5c2f27e243e"
+  integrity sha512-Lpaw230Z01kVhcM0Tk74gw1rWdV4Z27Akhso3qby+dPdJxs3h4msB2KRWBBH34j6WGCdpIo+7yLaILjKSm9uZA==
   dependencies:
-    "@9renpoto/eslint-config" "^7.2.0"
+    "@9renpoto/eslint-config" "^7.3.0"
     babel-eslint "^10.0.3"
     eslint-plugin-flowtype "^5.2.0"
 
@@ -20,10 +20,10 @@
     eslint-plugin-react "^7.20.6"
     eslint-plugin-react-hooks "^4.1.0"
 
-"@9renpoto/eslint-config@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.2.0.tgz#6290d9e6eccd05a317b4da979b397188f97714b6"
-  integrity sha512-yMtAwhCthYIqPAI7zGsU+iSf19S/97dHe7cljB8GcZ8nJXV+keG8/Phuhd8Rfr41WbbNDWN/fbCmBZY6hcKnow==
+"@9renpoto/eslint-config@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.3.0.tgz#e88539195fb13b5544037d2e862eab9bab4ac9b0"
+  integrity sha512-dt0cKYokIPUQNAeV6WyFuWr3hXKxwj1hLHoCTf+vCLSYJDkoCex9lLDY/7/PoacyrRPYdARibZ0AB2JiiS1ZyQ==
   dependencies:
     eslint-config-prettier "^6.10.0"
     eslint-plugin-prettier "^3.1.4"
