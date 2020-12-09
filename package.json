@@ -29,10 +29,10 @@
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "7.3.0",
     "@9renpoto/eslint-config-react": "7.3.0",
-    "@babel/core": "7.12.9",
-    "@babel/preset-env": "7.12.7",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.10",
     "@babel/preset-flow": "7.12.1",
-    "@babel/preset-react": "7.12.7",
+    "@babel/preset-react": "7.12.10",
     "@storybook/addon-essentials": "6.1.10",
     "@storybook/addon-storyshots": "6.1.10",
     "@storybook/react": "6.1.10",
