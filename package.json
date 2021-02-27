@@ -29,8 +29,8 @@
   "devDependencies": {
     "@9renpoto/eslint-config-flowtype": "7.3.0",
     "@9renpoto/eslint-config-react": "7.3.0",
-    "@babel/core": "7.13.1",
-    "@babel/preset-env": "7.13.5",
+    "@babel/core": "7.13.8",
+    "@babel/preset-env": "7.13.8",
     "@babel/preset-flow": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@storybook/addon-essentials": "6.1.20",
