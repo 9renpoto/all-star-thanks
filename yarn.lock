@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-flowtype@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.3.0.tgz#3e14ce582aa7c61f8d05b5cebbf7c5c2f27e243e"
-  integrity sha512-Lpaw230Z01kVhcM0Tk74gw1rWdV4Z27Akhso3qby+dPdJxs3h4msB2KRWBBH34j6WGCdpIo+7yLaILjKSm9uZA==
+"@9renpoto/eslint-config-flowtype@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.4.0.tgz#0e5e7e5893614bec3d79edde163258b39358da06"
+  integrity sha512-Ek+ZSHesEMx/XQl/TjAeVT6dhb2LQxT20EubUOS+Ip85lEBZEYfQBn4c+prVTymSokyOerCY9eYBS7mpo4QzYg==
   dependencies:
-    "@9renpoto/eslint-config" "^7.3.0"
+    "@9renpoto/eslint-config" "^7.4.0"
     babel-eslint "^10.0.3"
     eslint-plugin-flowtype "^5.2.0"
 
@@ -21,12 +21,12 @@
     eslint-plugin-react "^7.20.6"
     eslint-plugin-react-hooks "^4.1.0"
 
-"@9renpoto/eslint-config@^7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.3.0.tgz#e88539195fb13b5544037d2e862eab9bab4ac9b0"
-  integrity sha512-dt0cKYokIPUQNAeV6WyFuWr3hXKxwj1hLHoCTf+vCLSYJDkoCex9lLDY/7/PoacyrRPYdARibZ0AB2JiiS1ZyQ==
+"@9renpoto/eslint-config@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.4.0.tgz#db58c6171a8138c416624ec36ad9de21b59d0621"
+  integrity sha512-Ue3xUI54n/HWro+Vswy7i6qEOdOevHg6MNft+dPr8YTyOzqtOSCQcE8qEL1JKU8JI2Im+NjLqtgVhBThuormKQ==
   dependencies:
-    eslint-config-prettier "^6.10.0"
+    eslint-config-prettier "^8.1.0"
     eslint-plugin-prettier "^3.1.4"
 
 "@babel/code-frame@7.10.4", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5":
@@ -7151,13 +7151,6 @@ escodegen@^1.12.0, escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^6.10.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
-  integrity sha512-oB8cpLWSAjOVFEJhhyMZh6NOEOtBVziaqdDQ86+qhDHFbZXoRTM7pNSvFRfW/W/L/LrQ38C99J5CGuRBBzBsdA==
-  dependencies:
-    get-stdin "^6.0.0"
-
 eslint-config-prettier@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
@@ -8104,11 +8097,6 @@ get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
   integrity sha1-uWjGsKBDhDJJAui/Gl3zJXmkUP4=
-
-get-stdin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
-  integrity sha512-jp4tHawyV7+fkkSKyvjuLZswblUtz+SQKzSWnBbii16BuZksJlU1wuBYXY75r+duh/llF1ur6oNwi+2ZzjKZ7g==
 
 get-stream@^4.0.0:
   version "4.1.0"
