@@ -30,7 +30,7 @@
     "@9renpoto/eslint-config-flowtype": "7.4.0",
     "@9renpoto/eslint-config-react": "7.4.0",
     "@babel/core": "7.14.0",
-    "@babel/preset-env": "7.14.0",
+    "@babel/preset-env": "7.14.1",
     "@babel/preset-flow": "7.13.13",
     "@babel/preset-react": "7.13.13",
     "@storybook/addon-essentials": "6.1.21",
