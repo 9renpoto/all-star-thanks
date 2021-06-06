@@ -27,7 +27,7 @@
     "styleguide"
   ],
   "devDependencies": {
-    "@9renpoto/eslint-config-flowtype": "7.4.0",
+    "@9renpoto/eslint-config-flowtype": "7.5.0",
     "@9renpoto/eslint-config-react": "7.4.0",
     "@babel/core": "7.14.3",
     "@babel/preset-env": "7.14.4",
