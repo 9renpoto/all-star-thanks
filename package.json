@@ -45,7 +45,7 @@
     "flow-bin": "0.133.0",
     "husky": "7.0.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "27.4.2",
+    "jest": "27.4.3",
     "jest-date-mock": "1.0.8",
     "lint-staged": "12.1.2",
     "microbundle": "0.14.2",
