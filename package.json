@@ -42,7 +42,7 @@
     "css-modules-flow-types-cli": "2.0.0",
     "eslint": "7.32.0",
     "faker": "5.5.3",
-    "flow-bin": "0.133.0",
+    "flow-bin": "0.186.0",
     "husky": "7.0.4",
     "identity-obj-proxy": "3.0.0",
     "jest": "28.1.3",
