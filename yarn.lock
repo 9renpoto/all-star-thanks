@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-flowtype@7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.5.0.tgz#805f6ebb2c07902f49db5ab92fef3b4ef88b5e73"
-  integrity sha512-ZvRONP8A+Gf7lNEJDY3cYAWQewT5vpz2L5fcPmePWP675UcbKq2U4X2K1lI2tBrDYY9/JCU8dh8X9XzuajfULg==
+"@9renpoto/eslint-config-flowtype@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-flowtype/-/eslint-config-flowtype-7.6.0.tgz#b734a9d18eecc3c247ae03b8e5001d35e5eb78d7"
+  integrity sha512-3Q+cwIMP6Yl6gfnU288qkJe+OdNPSx6Fbe+LHOamf5TM/ekafREuWfJawID/OHoOJXW50lTrxwjuZjl/uioXGg==
   dependencies:
-    "@9renpoto/eslint-config" "^7.5.0"
+    "@9renpoto/eslint-config" "^7.6.0"
     babel-eslint "^10.0.3"
-    eslint-plugin-flowtype "^5.2.0"
+    eslint-plugin-flowtype "^8.0.3"
 
 "@9renpoto/eslint-config-react@7.5.0":
   version "7.5.0"
@@ -21,13 +21,13 @@
     eslint-plugin-react "^7.20.6"
     eslint-plugin-react-hooks "^4.1.0"
 
-"@9renpoto/eslint-config@^7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.5.0.tgz#38e50674c23aea98b4218c8a8612565f598d1ef8"
-  integrity sha512-NPHFxssLvNlRPcPJb3FfQ3tN8Tw03q6xY7TcrDARE+/uuS/FU+gmeJ5HTsLdQqaqQYAUf7OkgSiZwRLysqIByA==
+"@9renpoto/eslint-config@^7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config/-/eslint-config-7.6.0.tgz#310029fe102a4b76077f0ab774939acda5aba74b"
+  integrity sha512-nRIYET56U6odnydzuTdUF5iZ1yp7gxK7oF30saYnMLPJf0pNOq44UTtbkSKxA5xWtjVLOpmSrnidb22mFY5Ljg==
   dependencies:
     eslint-config-prettier "^8.1.0"
-    eslint-plugin-prettier "^3.1.4"
+    eslint-plugin-prettier "^4.0.0"
 
 "@ampproject/remapping@^2.1.0":
   version "2.1.1"
@@ -8001,12 +8001,12 @@ eslint-config-prettier@^8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
   integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
-eslint-plugin-flowtype@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-5.2.0.tgz#a4bef5dc18f9b2bdb41569a4ab05d73805a3d261"
-  integrity sha512-z7ULdTxuhlRJcEe1MVljePXricuPOrsWfScRXFhNzVD5dmTHWjIF57AxD0e7AbEoLSbjSsaA5S+hCg43WvpXJQ==
+eslint-plugin-flowtype@^8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-8.0.3.tgz#e1557e37118f24734aa3122e7536a038d34a4912"
+  integrity sha512-dX8l6qUL6O+fYPtpNRideCFSpmWOUVx5QcaGLVqe/vlDiBSe4vYljDWDETwnyFzpl7By/WVIu6rcrniCgH9BqQ==
   dependencies:
-    lodash "^4.17.15"
+    lodash "^4.17.21"
     string-natural-compare "^3.0.1"
 
 eslint-plugin-jsx-a11y@^6.4.1:
@@ -8026,10 +8026,10 @@ eslint-plugin-jsx-a11y@^6.4.1:
     jsx-ast-utils "^3.1.0"
     language-tags "^1.0.5"
 
-eslint-plugin-prettier@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
-  integrity sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==
+eslint-plugin-prettier@^4.0.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz#651cbb88b1dab98bfd42f017a12fa6b2d993f94b"
+  integrity sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -11146,7 +11146,7 @@ lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.19, lodash@~4.17.10:
+lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@~4.17.10:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
