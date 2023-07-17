@@ -50,12 +50,12 @@
   },
   "types": "lib/index.d.ts",
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{ts,tsx}": [
       "deno fmt",
       "eslint ."
     ],
-    "*.{css,md,json}": [
-      "prettier --write"
+    "*.{md,json}": [
+      "deno fmt"
     ]
   },
   "style": "lib/bundle.css"
