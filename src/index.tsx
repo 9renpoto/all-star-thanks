@@ -1,6 +1,3 @@
-/* @flow */
-import React from 'react'
-
 export type Row = {
   name: string,
   point: number,

@@ -4,22 +4,20 @@
   "description": "like `all-star-thanks` animation components",
   "license": "MIT",
   "repository": "ssh://git@github.com/9renpoto/all-star-thanks.git",
-  "author": "Keisuke Kan <9renpoto@gmail.com>",
+  "author": "Keisuke Umeno <9renpoto@gmail.com>",
   "homepage": "https://9renpoto.github.io/all-star-thanks",
   "bugs": {
     "url": "https://github.com/9renpoto/all-star-thanks/issues"
   },
-  "main": "lib/all-star-thanks.js",
-  "module": "/lib/all-star-thanks.mordern.js",
   "scripts": {
     "build": "run-s clean build:*",
     "build:assets": "cpx 'src/**/*.{css,jpeg}' lib",
-    "build:js": "microbundle build -i src/index.jsx -o lib",
+    "build:js": "tsc -p .",
     "clean": "rimraf coverage storybook-static lib",
-    "deploy": "run-s clean storybook",
-    "lint": "run-p -l lint:*",
-    "lint:es": "eslint . --ext=js,jsx",
-    "test": "jest"
+    "lint": "eslint . --ext=ts,tsx",
+    "test": "test-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [
     "react",
@@ -27,31 +25,30 @@
   ],
   "devDependencies": {
     "@9renpoto/eslint-config-react": "7.7.1",
+    "@9renpoto/eslint-config-typescript": "7.7.1",
+    "@9renpoto/tsconfig": "^7.7.2",
+    "@faker-js/faker": "^8.0.2",
+    "@storybook/addon-coverage": "^0.0.8",
+    "@storybook/addon-essentials": "^7.0.27",
+    "@storybook/addon-interactions": "^7.0.27",
+    "@storybook/addon-links": "^7.0.27",
+    "@storybook/addon-storyshots": "^7.0.27",
+    "@storybook/blocks": "^7.0.27",
+    "@storybook/preact": "^7.0.27",
+    "@storybook/preact-vite": "^7.0.27",
+    "@storybook/test-runner": "^0.11.0",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "cpx": "1.5.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "husky": "7.0.4",
-    "identity-obj-proxy": "3.0.0",
-    "jest": "28.1.3",
-    "jest-date-mock": "1.0.8",
     "lint-staged": "12.5.0",
-    "microbundle": "0.15.1",
     "mockdate": "3.0.5",
-    "npm-run-all": "4.1.5"
+    "npm-run-all": "4.1.5",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+    "storybook": "^7.0.27"
   },
   "types": "lib/index.d.ts",
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "identity-obj-proxy"
-    },
-    "coveragePathIgnorePatterns": [
-      "/stories/",
-      "/.storybook/"
-    ],
-    "setupFiles": [
-      "jest-date-mock"
-    ],
-    "collectCoverage": true
-  },
   "lint-staged": {
     "*.{js,jsx}": [
       "deno fmt",
@@ -61,7 +58,5 @@
       "prettier --write"
     ]
   },
-  "source": "src/index.jsx",
-  "style": "lib/bundle.css",
-  "unpkg": "lib/all-star-thanks.umd.js"
+  "style": "lib/bundle.css"
 }
