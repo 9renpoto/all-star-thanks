@@ -21,10 +21,8 @@ jobs:
     - run: npm ci
     - run: npm run lint
     - run: npm run build
-    - name: Install Playwright
-      run: npx playwright install --with-deps
-    - name: Run Storybook tests
-      run: yarn test-storybook
+    - run: npx playwright install --with-deps
+    - run: npm test -- --coverage
       env:
         TARGET_URL: '${{ github.event.deployment_status.target_url }}'
     - name: Coveralls GitHub Action
