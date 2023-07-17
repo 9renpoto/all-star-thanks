@@ -30,6 +30,6 @@ jobs:
           "npx wait-on tcp:6006 && npm test -- --coverage"
     - run: npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage
     - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v1.2.5
+      uses: coverallsapp/github-action@v2.2.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
