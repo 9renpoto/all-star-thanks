@@ -31,3 +31,5 @@ jobs:
     - run: npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@1.1.3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
