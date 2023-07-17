@@ -1,6 +1,10 @@
 {
   "extends": ["config:js-lib"],
-  "automerge": true,
-  "labels": ["Type: Dependencies"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
   "semanticCommits": true
 }
