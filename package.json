@@ -32,7 +32,6 @@
     "@storybook/addon-essentials": "7.1.1",
     "@storybook/addon-interactions": "7.1.1",
     "@storybook/addon-links": "7.1.1",
-    "@storybook/addon-storyshots": "7.1.1",
     "@storybook/blocks": "7.1.1",
     "@storybook/preact": "7.1.1",
     "@storybook/preact-vite": "7.1.1",
