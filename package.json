@@ -28,7 +28,7 @@
     "@9renpoto/eslint-config-typescript": "7.7.3",
     "@9renpoto/tsconfig": "7.7.3",
     "@faker-js/faker": "8.3.1",
-    "@storybook/addon-coverage": "0.0.9",
+    "@storybook/addon-coverage": "1.0.0",
     "@storybook/addon-essentials": "7.5.3",
     "@storybook/addon-interactions": "7.5.3",
     "@storybook/addon-links": "7.5.3",
