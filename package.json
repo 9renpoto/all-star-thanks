@@ -15,9 +15,10 @@
     "build:js": "tsc -p .",
     "clean": "rimraf coverage storybook-static lib",
     "lint": "eslint . --ext=ts,tsx",
-    "test": "test-storybook",
+    "test": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
   },
   "keywords": [
     "react",
