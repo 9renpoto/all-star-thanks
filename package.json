@@ -15,9 +15,10 @@
     "build:js": "tsc -p .",
     "clean": "rimraf coverage storybook-static lib",
     "lint": "eslint . --ext=ts,tsx",
-    "test": "test-storybook",
+    "test": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "posttest": "cp coverage/storybook/coverage-storybook.json coverage/coverage-storybook.json && nyc report --reporter=lcov -t coverage --report-dir coverage"
   },
   "keywords": [
     "react",
@@ -35,7 +36,7 @@
     "@storybook/blocks": "7.6.3",
     "@storybook/preact": "7.6.3",
     "@storybook/preact-vite": "7.6.3",
-    "@storybook/test-runner": "0.11.0",
+    "@storybook/test-runner": "0.16.0",
     "@storybook/testing-library": "0.2.2",
     "cpx": "1.5.0",
     "eslint-plugin-storybook": "0.6.15",

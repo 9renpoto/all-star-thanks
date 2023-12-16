@@ -32,7 +32,6 @@ jobs:
         npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
           "npx http-server storybook-static --port 6006 --silent" \
           "npx wait-on tcp:6006 && npm test -- --coverage"
-    - run: npx nyc report --reporter=lcov -t .nyc_output/ --report-dir coverage
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949 # v2.2.3
       with:
